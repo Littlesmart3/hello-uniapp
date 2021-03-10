@@ -1,0 +1,65 @@
+{
+	"pages": [{
+			"path": "pages/home/home"
+		},
+		{
+			"path": "pages/uni-style/uni-style"
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "信息页",
+				"navigationBarBackgroundColor": "#007aff",
+				"h5": {
+					"pullToRefresh": {
+						"color": "#7d26cd"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/index/index"
+		}, {
+			"path": "pages/contact/contact"
+		}, {
+			"path": "pages/detail/detail"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "绿帽子",
+		"navigationBarBackgroundColor": "#7fff00",
+		"backgroundColor": "#7ccd7c",
+		"enablePullDownRefresh": true,
+		"backgroundTextStyle": "light"
+	},
+	"tabBar": {
+		"color": "#a0522d",
+		"selectedColor": "#b3ee3a",
+		"backgroundColor": "#ba55d3",
+		"list": [{
+			"text": "首页",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabs/home.png",
+			"selectedIconPath": "static/tabs/home-active.png"
+		}, {
+			"text": "信息",
+			"pagePath": "pages/message/message",
+			"iconPath": "static/tabs/message.png",
+			"selectedIconPath": "static/tabs/message-active.png"
+		}, {
+			"text": "我们",
+			"pagePath": "pages/contact/contact",
+			"iconPath": "static/tabs/contact.png",
+			"selectedIconPath": "static/tabs/contact-active.png"
+		}]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "详情页",
+			"path": "pages/detail/detail",
+			"query": "id = 80"
+		}]
+	}
+}
