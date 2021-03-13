@@ -1,5 +1,12 @@
 {
-	"pages": [{
+	"pages": [
+		{
+			"path":"pages/list/list",
+			"style":{
+				"enablePullDownRefresh":true
+			}
+		},
+		{
 			"path": "pages/home/home"
 		},
 		{
